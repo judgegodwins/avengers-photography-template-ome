@@ -2,7 +2,8 @@ var display = document.querySelector('#img-display'); // the dark background pop
 var images = document.querySelectorAll('.image'); //images in popup;
 var closer = document.querySelector('.closer'); // x icon to close popup
 var bckShifter = document.querySelector('#backward'); // forward button
-var frtShifter = document.querySelector('#forward') // backward button
+var frtShifter = document.querySelector('#forward');
+var displayer = display.children[0]; // backward button
 
 
 
@@ -37,8 +38,8 @@ frtShifter.addEventListener('click', function(e) {
     let currentIndex = popupImages.indexOf(displayer.children[2]); //index of currentdisplaying image
     let newImage;
     if(currentIndex === popupImages.length-1) { // if last image start from beginning
-        newImage = popupImages.find(function(img) { popupImages.indexOf(img) === 0});
-    } else newImage = popupImages.find(function(img) {popupImages.indexOf(img) === currentIndex + 1}); // find next image
+        newImage = popupImages.find(function(img) { return popupImages.indexOf(img) === 0});
+    } else newImage = popupImages.find(function(img) { return popupImages.indexOf(img) === currentIndex + 1}); // find next image
     displayer.replaceChild(newImage, displayer.children[2]); // replace already existing image with found one.
 })
 
@@ -46,9 +47,11 @@ bckShifter.addEventListener('click', function(e) {
     let currentIndex = popupImages.indexOf(displayer.children[2]);
     let newImage;
     if(currentIndex === 0) {
-        newImage = popupImages[popupImages.length-1]; // if first image go through the back
+        newImage = popupImages[popupImages.length-1];
+        console.log(newImage) // if first image go through the back
     } else {
-        newImage = popupImages.find(img => popupImages.indexOf(img) === currentIndex - 1 );
+        newImage = popupImages.find(function(img) { return popupImages.indexOf(img) === currentIndex - 1 });
+        console.log(newImage)
     }
     displayer.replaceChild(newImage, displayer.children[2]); //replace image
 })

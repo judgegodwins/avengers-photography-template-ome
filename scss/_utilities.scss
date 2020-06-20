@@ -1,0 +1,10 @@
+@mixin centerize() {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.no-pad-side {
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+}

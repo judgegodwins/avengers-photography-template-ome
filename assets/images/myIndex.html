@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+
+	<meta charset="utf-8">
+
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <title>Home Page</title>
+    
+    <link rel="stylesheet"  type = "text/css" href="style.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
+    
+
+    
+
+
+<!-- Code injected by live-server -->
+<script type="text/javascript">
+	// <![CDATA[  <-- For SVG support
+	if ('WebSocket' in window) {
+		(function () {
+			function refreshCSS() {
+				var sheets = [].slice.call(document.getElementsByTagName("link"));
+				var head = document.getElementsByTagName("head")[0];
+				for (var i = 0; i < sheets.length; ++i) {
+					var elem = sheets[i];
+					var parent = elem.parentElement || head;
+					parent.removeChild(elem);
+					var rel = elem.rel;
+					if (elem.href && typeof rel != "string" || rel.length == 0 || rel.toLowerCase() == "stylesheet") {
+						var url = elem.href.replace(/(&|\?)_cacheOverride=\d+/, '');
+						elem.href = url + (url.indexOf('?') >= 0 ? '&' : '?') + '_cacheOverride=' + (new Date().valueOf());
+					}
+					parent.appendChild(elem);
+				}
+			}
+			var protocol = window.location.protocol === 'http:' ? 'ws://' : 'wss://';
+			var address = protocol + window.location.host + window.location.pathname + '/ws';
+			var socket = new WebSocket(address);
+			socket.onmessage = function (msg) {
+				if (msg.data == 'reload') window.location.reload();
+				else if (msg.data == 'refreshcss') refreshCSS();
+			};
+			if (sessionStorage && !sessionStorage.getItem('IsThisFirstTime_Log_From_LiveServer')) {
+				console.log('Live reload enabled.');
+				sessionStorage.setItem('IsThisFirstTime_Log_From_LiveServer', true);
+			}
+		})();
+	}
+	else {
+		console.error('Upgrade your browser. This Browser is NOT supported WebSocket for Live-Reloading.');
+	}
+	// ]]>
+</script></head>
+ 
+
+<style> 
+
+/* Create two equal columns that floats next to each other */
+.column {
+  
+  width: 50%;
+  padding: 5px;
+}
+
+.column img {
+  margin-top: 12px;
+  
+}
+
+.row {
+  margin-left: 100px;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+
+}
+
+.footer {
+        
+        font-weight: 300;  
+    }
+    .footer .heading-2 {
+        color: var(--secondary-color);
+        font-weight: 600;
+    }   
+   
+    .btn-round {
+        border-radius: 35px;
+    } 
+    .subscribe {
+        border: 2px solid #4F5F76;
+        box-sizing: border-box;
+        border-radius: 90px;
+        color: #4F5F76;
+        width: 50%;
+
+   }
+   .subscribe:hover, .subscribe:active {
+       color: var(--color-white);
+   }
+    .footer-brand {
+        color: var(--grey-blue);
+        font-weight: 600;
+        font-size: 32px;
+    }
+    .recent-shots a {
+        color: inherit;
+    }
+    .email-input {
+        outline: none;
+        border: 0;
+        border-bottom: 2px solid var(--grey-blue);
+        background-color: transparent;
+        width: 100%;
+        color: var(--color-white);
+    }
+
+    input::placeholder {
+        color: var(--grey-blue);
+    }
+   
+
+
+</style> 
+
+
+    <!-- Code injected by live-server -->
+<script type="text/javascript">
+	// <![CDATA[  <-- For SVG support
+	if ('WebSocket' in window) {
+		(function () {
+			function refreshCSS() {
+				var sheets = [].slice.call(document.getElementsByTagName("link"));
+				var head = document.getElementsByTagName("head")[0];
+				for (var i = 0; i < sheets.length; ++i) {
+					var elem = sheets[i];
+					var parent = elem.parentElement || head;
+					parent.removeChild(elem);
+					var rel = elem.rel;
+					if (elem.href && typeof rel != "string" || rel.length == 0 || rel.toLowerCase() == "stylesheet") {
+						var url = elem.href.replace(/(&|\?)_cacheOverride=\d+/, '');
+						elem.href = url + (url.indexOf('?') >= 0 ? '&' : '?') + '_cacheOverride=' + (new Date().valueOf());
+					}
+					parent.appendChild(elem);
+				}
+			}
+			var protocol = window.location.protocol === 'http:' ? 'ws://' : 'wss://';
+			var address = protocol + window.location.host + window.location.pathname + '/ws';
+			var socket = new WebSocket(address);
+			socket.onmessage = function (msg) {
+				if (msg.data == 'reload') window.location.reload();
+				else if (msg.data == 'refreshcss') refreshCSS();
+			};
+			if (sessionStorage && !sessionStorage.getItem('IsThisFirstTime_Log_From_LiveServer')) {
+				console.log('Live reload enabled.');
+				sessionStorage.setItem('IsThisFirstTime_Log_From_LiveServer', true);
+			}
+		})();
+	}
+	else {
+		console.error('Upgrade your browser. This Browser is NOT supported WebSocket for Live-Reloading.');
+	}
+	// ]]>
+</script></head>
+
+      <body> 
+    
+        <div class="page-header">
+          <div class="p-3 mb-2 bg-dark"></div>
+
+        <nav class="navbar navbar-light" style="background-color: #091f36;">
+  <a class="navbar-brand" style="color: white;" href="#">[ iCAPTURE ]</a>
+
+
+
+  <ul class="nav justify-content-center">
+    <li class="nav-item">
+      <a class="nav-link active" style="color: white;" href="#">HOME</a>
+    <li class="nav-item">
+      <a class="nav-link" style="color: white;" href="#">SERVICES</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" style="color: yellow;" href="#">PORTFOLIO</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link active" style="color: white;" href="#">CONTACT</a>
+    </li>
+  </ul>
+
+
+
+  <ul class="nav justify-content-end">
+    <li class="nav-item">
+      <a class="nav-link"><i class="fab fa-twitter"></i></a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link"><i class="fab fa-facebook-f"></i></a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link"><i class="fab fa-instagram"></i></a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link"><i class="fab fa-pinterest"></i></a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link"><i class="fa fa-search"></i></a>
+  </ul>
+</div>
+<div class="pos-f-t">
+  <div class="collapse" id="navbarToggleExternalContent">
+    <div class="bg-dark p-4">
+      <h4 class="text-white">Collapsed content</h4>
+      <span class="text-muted">
