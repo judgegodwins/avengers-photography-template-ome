@@ -19,9 +19,11 @@ $header-color: #feda6a;
     & > img {
         width: inherit;
     }
+
     &.last-cover {
         padding-bottom: 40px;
     }
+    
 }
 
 .add-pad {
@@ -139,6 +141,15 @@ nav {
         }
     }
 
+    .main-links {
+        margin-bottom: 200px;
+    }
+
+    .divider {
+        background-color: white;
+        // width: 100
+    }
+
 }
 
 #footer {
@@ -218,23 +229,41 @@ nav {
             }
         }
 
-        .socials {
-            display: flex;
-            width: 50%;
+        // .socials {
+        //     display: flex;
+        //     width: 50%;
 
-            .social {
-                font-size: 30px;
-                @include centerize();
+        //     .social {
+        //         font-size: 30px;
+        //         @include centerize();
                 
-                &>i {
-                    color: $greyBlue;
-                }
+        //         &>i {
+        //             color: $greyBlue;
+        //         }
 
-                &:first-child {
-                    padding-left: 0;
-                }
-            }
+        //         &:first-child {
+        //             padding-left: 0;
+        //         }
+        //     }
+        // }
+
+    }
+}
+
+.socials {
+    display: flex;
+    width: 50%;
+
+    .social {
+        font-size: 30px;
+        @include centerize();
+        
+        &>i {
+            color: $greyBlue;
         }
 
+        &:first-child {
+            padding-left: 0;
+        }
     }
 }

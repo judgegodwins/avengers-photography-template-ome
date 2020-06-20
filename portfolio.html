@@ -10,9 +10,9 @@
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
 </head>
 <body>
-    <nav class="navbar navbar-light" style="background-color: #091f36;">
+    <nav class="navbar navbar-expand-lg fixed-top navbar-light" style="background-color: #091f36;">
         <div class="nav-item">
-            <div class="nav-button">
+            <div class="nav-button no-pad-side navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <div class="nav-line"></div>
                 <div class="nav-line"></div>
                 <div class="nav-line"></div>
@@ -21,40 +21,81 @@
         <div class="head-container">
             <a class="navbar-brand head" style="color: white;" href="#">[ iCAPTURE ]</a>
         </div>
-        
+
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <div class="mobile-nav-wrapper">
+                <ul class="navbar-nav main-links">
+                    <li class="nav-item active">
+                        <a class="nav-link text-white" href="#">HOME
+                            <span class="sr-only">(current)</span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-white href="#">SERVICES</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-white" href="#">PORTOFOLIO</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-white" href="#">CONTACT</a>
+                    </li>
+                </ul>
+                <hr class="divider">
+                <div class="socials nav-socials no-pad-side">
+                    <div class="social col-sm-3">
+                        <i class="fab fa-twitter"></i>
+                    </div>
+                    <div class="social col-sm-3">
+                        <i class="fab fa-instagram"></i>
+                    </div>
+                    <div class="social col-sm-3">
+                        <i class="fab fa-facebook-square"></i>
+                    </div>
+                    <div class="social col-sm-3">
+                        <i class="fab fa-pinterest"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
 
     </nav>
     <div class="container-fluid add-pad">
         <div class="row">
-            <div class="col-sm-12">
+            <div class="img-container col-sm-12">
                 <div class="img-cover">
                     <img class="image" src="assets/images/imgone.jpeg" alt="" srcset="">
                 </div>
             </div>
 
-            <div class="col-sm-12">
+            <div class="img-container col-sm-12">
                 <div class="img-cover">
                     <img class="image" src="assets/images/imgtwo.jpeg" alt="">
                 </div>
             </div>
 
-            <div class="col-sm-12">
+            <div class="img-container col-sm-12">
                 <div class="img-cover">
                     <img class="image" src="assets/images/imgthree.jpeg" alt="" srcset="">
                 </div>
             </div>
 
-            <div class="col-sm-12">
+            <div class="img-container col-sm-12">
                 <div class="img-cover">
                     <img class="image" src="assets/images/imgfour.jpeg" alt="" srcset="">
                 </div>
             </div>
 
-            <div class="col-sm-12">
-                <div class="img-cover last-cover">
+            <div class="img-container col-sm-12">
+                <div class="img-cover ">
                     <img class="image" src="assets/images/imgfive.jpg" alt="" srcset="">
                 </div>
             </div>
+            <div class="img-container col-sm-12">
+                <div class="img-cover last-cover">
+                    <img class="image" src="assets/images/imgsix.jpeg" alt="" srcset="">
+                </div>
+            </div>
+            
             <div id="img-display">
                 <div class="full-img">
                     <div class="shifter" id="backward">
@@ -113,7 +154,7 @@
                     <div class="social  col-sm-3">
                         <i class="fab fa-twitter"></i>
                     </div>
-                    <div class="social  col-sm-3">
+                    <div class="social col-sm-3">
                         <i class="fab fa-instagram"></i>
                     </div>
                     <div class="social col-sm-3">

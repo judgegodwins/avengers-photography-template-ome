@@ -3,6 +3,10 @@
   padding-right: 0 !important;
 }
 
+.nav-socials {
+  margin-bottom: 20px;
+}
+
 * {
   box-sizing: border-box;
   font-family: 'Montserrat', sans-serif;
@@ -144,6 +148,14 @@ nav .nav-line:last-child {
   margin-bottom: 0 !important;
 }
 
+nav .main-links {
+  margin-bottom: 200px;
+}
+
+nav .divider {
+  background-color: white;
+}
+
 #footer {
   width: 100%;
   padding: 30px 0;
@@ -220,22 +232,22 @@ nav .nav-line:last-child {
   margin-bottom: 10px;
 }
 
-#footer .subscriber .socials {
+.socials {
   display: flex;
   width: 50%;
 }
 
-#footer .subscriber .socials .social {
+.socials .social {
   font-size: 30px;
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
-#footer .subscriber .socials .social > i {
+.socials .social > i {
   color: #4f5f76;
 }
 
-#footer .subscriber .socials .social:first-child {
+.socials .social:first-child {
   padding-left: 0;
 }
